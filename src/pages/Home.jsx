@@ -8,12 +8,14 @@ import TestimonialSlider from "../components/TestimonialSlider";
 import Contact from "../components/Contact";
 import Homepag from "../components/homecomponent"
 import Footer from "../components/Footer"
+import HomeComponent from "../components/HomeSection"
 export default function Home() {
     return (
       <div>
       <section className="my-home">
         <div className="container">
-          <Homepag />
+          {/* <Homepag /> */}
+          <HomeComponent />
         </div>
       </section>
 

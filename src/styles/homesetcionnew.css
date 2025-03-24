@@ -1,0 +1,40 @@
+/* Parallax Background */
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background-image: url('/src/images//paralex.png'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Enables the parallax effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Content Styling */
+  .parallax-content {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  /* Explore Link */
+  .explore-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .explore-link:hover {
+    opacity: 0.7;
+  }
+  
