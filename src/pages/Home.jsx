@@ -13,10 +13,10 @@ export default function Home() {
     return (
       <div>
       <section className="my-home">
-        <div className="container">
+       
           {/* <Homepag /> */}
           <HomeComponent />
-        </div>
+  
       </section>
 
       <section>
