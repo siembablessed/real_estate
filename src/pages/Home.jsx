@@ -6,22 +6,20 @@ import RealEstateSection from "../components/RealEstateSection";
 import LeasingSection from "../components/Leasing_Sect";
 import TestimonialSlider from "../components/TestimonialSlider";
 import Contact from "../components/Contact";
-import Homepag from "../components/homecomponent"
 import Footer from "../components/Footer"
 import HomeComponent from "../components/HomeSection"
 export default function Home() {
     return (
       <div>
       <section className="my-home">
-       
-          {/* <Homepag /> */}
           <HomeComponent />
-  
       </section>
 
       <section>
         <div className="container">
-          <h1 className="mngtxt">Expert Management for Properties, Tenants, and Real <br /> Estate Investments</h1>
+          <div className="cont-merge">
+          <h1>Expert Management for Properties, Tenants, and Real <br /> Estate Investments</h1>
+          </div>
           <Propertycards />
         </div>
       </section>
