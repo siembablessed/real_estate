@@ -4,10 +4,8 @@
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 15px 40px; /* Adjust padding for better spacing */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px; 
   }
-
 
   
   .navbar-container {
@@ -20,7 +18,7 @@
   }
   
   .navbar-logo img {
-    height: 80px;
+    height: 100px;
 
   }
   
@@ -34,6 +32,10 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: color 0.3s;
+
+    a:active{
+      color: #EC221F;
+    }
   }
   
   .navbar-nav a:hover {
@@ -41,10 +43,10 @@
     padding: 5px 10px;
     font-size: 16px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    border: 2px solid #EC221F;
-    border-radius: 50px; 
+    color: #F40202;
+    background-color: #C8C0C0C0;
+    border: none;
+    border-radius: 10px; 
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -52,7 +54,7 @@
   
   .navbar-contact {
     background-color: #EC221F;
-    color: white;
+    color: white !important;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: background-color 0.3s;
@@ -60,7 +62,9 @@
 
   
   .navbar-contact:hover {
-    background-color: #c41d19;
+    background-color: #c41d19 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
   }
   
   .menu-button {
@@ -70,7 +74,6 @@
     border: none;
   }
   
-  /* Mobile Styles */
   @media (max-width: 768px) {
     .navbar-nav {
       display: none;
@@ -79,7 +82,7 @@
     .menu-button {
       display: block;
     }
-  
+
     .sidebar {
       position: fixed;
       top: 0;
@@ -137,6 +140,11 @@
       gap: 80px;
     }
   }
+
+  .sidebar-nav .active-link {
+    font-weight: bold;
+    color: #EC221F;
+  }
   
 
   /* Active link styling */
@@ -145,17 +153,13 @@
   padding: 5px 10px;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  border: 2px solid #EC221F;
-  border-radius: 50px; 
+  background-color: #C8C0C0C0;
+  border: none;
+  border-radius: 10px; 
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
+  color: #EC221F !important;
 }
 
-/* Ensure active links in the sidebar also highlight */
-.sidebar-nav .active-link {
-  font-weight: bold;
-  color: #EC221F;
-}
+
